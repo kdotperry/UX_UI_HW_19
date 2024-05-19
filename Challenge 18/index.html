@@ -7,7 +7,8 @@
     <title>Kevin Perry's Portfolio</title>
 </head>
 <body>
-<div>
+<div>  
+
 <div class="nav">
     <div class="nav-header">
       <div class="nav-title">Kevin Perry</div>
@@ -23,7 +24,8 @@
       <a href=# target="_blank">About</a>
       <a href=# target="_blank">Skills</a>
       <a href=# target="_blank">Work</a>
-      <a href=# target="_blank">Contact</a>
+      <a href="Images/Resumepic.png" target="_blank">Resume</a>
+      
     </div>
     </div>
    </div>
@@ -36,8 +38,10 @@
             I aim to help this world,<br>
             One design at a time.<br>
         </p>
-        <button class="myButton">Download Resume</button>
-        
+        <title>Resume Download</title>
+        <id class="myButton" id class="downloadResumeButton">
+        <a href="Images/KPERRY_UI_Resume.pdf" class id="myButton">Download Resume</a>
+            <div>
     </div>
     </section>
     <h1 class="heading">My UX Skills</h1>
@@ -90,14 +94,30 @@
         <button class="myButton">View Project</button>
     </div>
 </div>
+<div class="contact-form-container">
+    <h2>Contact Me</h2>
+    <form action="submit_form.php" method="post">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
     </section>
     <footer>
         <div class="footer">
-            <a href="#" target="_blank">About</a>
-            <a href="#" target="_blank">Skills</a>
+            <a href="#" target="_blank">Awards</a>
+            <a href="#" target="_blank">Certificates</a>
             <a href="#" target="_blank">Work</a>
             <a href="#" target="_blank">Contact</a>
-          </div>
+
+        </div>
       </footer>
-</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</script>
 </html>
